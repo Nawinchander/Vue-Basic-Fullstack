@@ -7,3 +7,28 @@ Backend: Node.js, Express.js, REST APIs
 Databases: MongoDB + MySQL
 
 
+fullstack-vue-app/
+│── backend/
+│   │── config/
+│   │   ├── mongo.js
+│   │   └── mysql.js
+│   │── controllers/
+│   │   └── userController.js
+│   │── routes/
+│   │   └── userRoutes.js
+│   │── models/
+│   │   └── User.js
+│   │── server.js
+│   │── package.json
+│
+│── frontend/
+│   │── src/
+│   │   │── components/
+│   │   │   ├── UserForm.vue
+│   │   │   └── UserList.vue
+│   │   │── App.vue
+│   │   │── main.js
+│   │── package.json
+
+
+

@@ -1,4 +1,38 @@
-<script setup></script>
+<template>
+  <div>
+    <h1>Vue Full Stack App</h1>
+    <UserForm @user-added="fetchUsers" />
+    <UserList :users="users" />
+  </div>
+</template>
+
+<script>
+import axios from 'axios';
+import UserForm from './Components/UserForm.vue';
+import UserList from './Components/UserList.vue';
+
+export default {
+  components: { UserForm, UserList },
+  data() {
+    return {
+      users: []
+    }
+  },
+  methods: {
+    async fetchUsers() {
+      const res = await axios.get('http://localhost:5000/api/users');
+      this.users = res.data;
+    }
+  },
+  mounted() {
+    this.fetchUsers();
+  }
+}
+</script>
+
+
+
+<!-- <script setup></script>
 
 <template>
   <h1>You did it!</h1>
@@ -8,4 +42,4 @@
   </p>
 </template>
 
-<style scoped></style>
+<style scoped></style> -->

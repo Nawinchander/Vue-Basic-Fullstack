@@ -32,3 +32,33 @@ fullstack-vue-app/
 
 
 
+Vue Concepts:
+Two-way Binding: v-model
+Props: :users="users"
+Event Handling: @click, $emit
+Axios: API Calls
+Backend Concepts:
+Express API Routes
+MongoDB Integration
+MySQL Integration
+MVC Folder Structure
+
+Step-by-Step Flow
+User enters name/email in Vue form
+Vue sends POST request via Axios
+Express API receives request
+Data stored in MongoDB + MySQL
+Vue fetches updated users list
+UserList receives data via props
+
+Next Improvements
+
+You can extend this project with:
+
+Update/Delete APIs
+Vue Router
+Vuex/Pinia
+JWT Authentication
+Docker
+Unit Testing
+Deployment

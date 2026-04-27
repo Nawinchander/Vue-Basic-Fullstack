@@ -3,6 +3,7 @@
     <h1>Vue Full Stack App</h1>
     <UserForm @user-added="fetchUsers" />
     <UserList :users="users" />
+    <router-view />
   </div>
 </template>
 

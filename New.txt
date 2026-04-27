@@ -1,0 +1,44 @@
+fullstack-vue-app/
+│── backend/
+│   │── config/
+│   │   ├── mongo.js
+│   │   └── mysql.js
+│   │── controllers/
+│   │   ├── userController.js
+│   │   └── authController.js      <-- ADD
+│   │── routes/
+│   │   ├── userRoutes.js
+│   │   └── authRoutes.js          <-- ADD
+│   │── middleware/
+│   │   └── authMiddleware.js      <-- ADD
+│   │── models/
+│   │   └── User.js                <-- UPDATE
+│   │── tests/
+│   │   └── auth.test.js           <-- ADD
+│   │── Dockerfile                 <-- ADD
+│   │── server.js                  <-- UPDATE
+│
+│── frontend/
+│   │── src/
+│   │   │── components/
+│   │   │   ├── UserForm.vue
+│   │   │   └── UserList.vue
+│   │   │── views/                 <-- ADD
+│   │   │   │   ├── Login.vue
+│   │   │   │   ├── Register.vue
+│   │   │   │   └── Dashboard.vue
+│   │   │── router/
+│   │   │   └── index.js           <-- ADD
+│   │   │── store/
+│   │   │   └── auth.js            <-- ADD
+│   │   │── App.vue                <-- UPDATE
+│   │   │── main.js                <-- UPDATE
+│   │── Dockerfile                 <-- ADD
+│
+│── .github/
+│   │── workflows/
+│   │   └── ci.yml                 <-- ADD
+│
+│── docker-compose.yml             <-- ADD
+
+

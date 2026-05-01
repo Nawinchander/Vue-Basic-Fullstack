@@ -1,0 +1,7 @@
+Vue Full Stack Project (Vue + Node.js + Express + MongoDB + SQL)
+
+This is a basic full stack project using:
+
+Frontend: Vue 3, Axios, Props, Event Handling, Two-way Binding
+Backend: Node.js, Express.js, REST APIs
+Databases: MongoDB + MySQL
